@@ -10,10 +10,11 @@ root.render(
   <Suspense
     fallback={
       <div id="sus-fallback">
-        <h1>Loading</h1>
+        <h1>还没加载好，桥豆麻袋</h1>
       </div>
     }
   >
+    {/* 此处的store是存储数据，需要使用Provider组件包裹起来*/}
     <Provider store={store}>
       <App />
     </Provider>
